@@ -45,8 +45,8 @@ const TreeShakeableIcon = forwardRef(
     return (
       <Box
         is="svg"
-        // To allow innerRef to be passed from the consumer this needs to be before svgProps
-        innerRef={ref}
+        // To allow ref to be passed from the consumer this needs to be before svgProps
+        ref={ref}
         {...svgProps}
         data-icon={name}
         style={style}
